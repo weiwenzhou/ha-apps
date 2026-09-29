@@ -9,6 +9,12 @@ Choose stream names that match your own installation. Preserve unrelated
 go2rtc settings and review any required restart.
 The default RTSP destination is the HA host's existing listener on port 8554.
 
+With `output_mode: serve`, the bridge instead listens on the HA host's loopback
+address at `rtsp_port` (default 18554). Configure each viewing name as a pull of
+rtsp://127.0.0.1:18554/CAMERA_NAME, where CAMERA_NAME is the camera's name in this
+app's options, and remove its separate input stream. Change the go2rtc
+configuration and this option together; streams are unavailable in between.
+
 Only one bridge instance should publish the same input names. For migration
 from a local app, keep the old app stopped, install this repository app and copy
 its configuration in HA. Preserve the old configuration for rollback. Validate

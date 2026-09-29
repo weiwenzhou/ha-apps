@@ -1,5 +1,5 @@
 name: Zmodo Local Bridge
-version: 0.2.0
+version: 0.3.0
 slug: zmodo_local_bridge
 description: Direct local Zmodo video and audio into an existing go2rtc app
 url: https://github.com/weiwenzhou/zmodo-ha-apps
@@ -10,9 +10,13 @@ boot: auto
 init: false
 host_network: true
 options:
+  output_mode: publish
+  rtsp_port: 18554
   go2rtc_url: rtsp://127.0.0.1:8554
   cameras: []
 schema:
+  output_mode: list(publish|serve)?
+  rtsp_port: port?
   go2rtc_url: str
   cameras:
   - name: str
