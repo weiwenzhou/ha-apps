@@ -1,3 +1,10 @@
+# 0.3.2
+
+- After an app restart, video and audio timestamps continue forward instead of
+  starting over, so players that stayed connected through go2rtc no longer
+  receive earlier timestamps. The app stores only each stream's last timestamp
+  position in `/data/timeline.json`.
+
 # 0.3.1
 
 - Default `rtsp_port` is now 38554. The old default, 18554, is used by Home

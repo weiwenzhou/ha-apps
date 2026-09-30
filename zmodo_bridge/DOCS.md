@@ -20,6 +20,10 @@ from a local app, keep the old app stopped, install this repository app and copy
 its configuration in HA. Preserve the old configuration for rollback. Validate
 all streams before removing the previous installation.
 
+Turn on Watchdog on the app page so Home Assistant restarts the app if its
+container exits. Watchdog cannot detect a bridge that stops streaming while
+its container keeps running.
+
 Update from the app page in Home Assistant after reviewing the release notes.
 A private registry credential must remain valid for downloads. Streaming after
 installation uses the LAN and does not need registry access.
