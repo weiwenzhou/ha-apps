@@ -1,3 +1,11 @@
+# 0.3.1
+
+- Default `rtsp_port` is now 38554. The old default, 18554, is used by Home
+  Assistant's built-in go2rtc, so serve mode could not start. Existing installs
+  keep their saved value; change it to a free port if serve mode fails to start.
+- Startup failures now log the operating-system error code (for example
+  `EADDRINUSE`).
+
 # 0.3.0
 
 - Optional `output_mode: serve`: the bridge serves each camera on a loopback-only
