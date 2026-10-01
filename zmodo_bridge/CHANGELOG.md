@@ -1,3 +1,11 @@
+# 0.3.3
+
+- A camera that returns an unexpected reply is tried again every five minutes
+  instead of staying unavailable until the app is restarted. Other cameras
+  keep streaming meanwhile.
+- Security updates for the bundled cryptography library. The app now runs on
+  Python 3.14.
+
 # 0.3.2
 
 - After an app restart, video and audio timestamps continue forward instead of
