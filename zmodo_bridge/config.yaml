@@ -2,7 +2,7 @@ name: Zmodo Local Bridge
 version: 0.3.3
 slug: zmodo_local_bridge
 description: Direct local Zmodo video and audio into an existing go2rtc app
-url: https://github.com/weiwenzhou/zmodo-ha-apps
+url: https://github.com/weiwenzhou/ha-apps
 arch:
 - amd64
 startup: application
