@@ -1,6 +1,6 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-configuration
 name: eufy-sdk bridge (floodlight)
-version: "1.20261013.0"
+version: "1.20261013.1"
 slug: eufy_sdk_bridge_floodlight
 description: Official eufy-sdk bridge with the T8420X / T8424 floodlight patch.
 url: https://github.com/weiwenzhou/ha-apps
